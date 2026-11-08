@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en"><head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, ">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <title>DeroGold</title>
+    <title>DeroGold (DEGO) | Downloads and project information</title>
+    <meta name="description" content="DeroGold (DEGO): official core software, release downloads, build instructions and project history.">
+    <link rel="canonical" href="https://derogold.com/">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-extensions@4.0.0/dist/css/bulma-extensions.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://derogold.com/css/main.css">
+    <link rel="stylesheet" href="css/main.css">
 	  </head>
   <body>
     <section class="hero is-fullheight is-medium"> <!-- Hero head: will stick at the top -->
@@ -14,10 +16,10 @@
           <div class="container">
             <div class="navbar-brand"> <a class="navbar-item">
                 <h1 class="has-text-white title"></h1>
-              </a> <span class="navbar-burger burger" data-target="navbarMenuHeroA">
-                <span></span> <span></span> <span></span> </span> </div>
+              </a> <button type="button" class="navbar-burger burger" data-target="navbarMenuHeroA" aria-label="Toggle navigation" aria-controls="navbarMenuHeroA" aria-expanded="false">
+                <span></span> <span></span> <span></span> </button> </div>
 				            <div id="navbarMenuHeroA" class="navbar-menu">
-              <div class="navbar-end"> <span class="navbar-item"> <a class="button" href="https://github.com/derogold/derogold"> <span class="icon">
+              <div class="navbar-end"> <span class="navbar-item"> <a class="button" href="https://github.com/derogold/derogold-core/releases/latest"> <span class="icon">
                       <i class="fab fa-github"></i> </span> <span>Download</span>
                   </a> </span> </div>
             </div>
@@ -28,8 +30,20 @@
       <div class="hero-body">
         <div class="container has-text-centered">
           <h1 class="has-text-white title">Welcome to DeroGold</h1>
-          <img src="https://derogold.com/assets/dego.png" alt="" height="auto" width="300px"> </div>
+          <img src="assets/dego.png" alt="DeroGold logo" width="300"> </div>
       </div>
+    </section>
+    <section class="section" id="downloads" aria-labelledby="downloads-title">
+      <div class="container"><div class="box">
+        <h2 class="title" id="downloads-title">DeroGold today</h2>
+        <p>DeroGold is an open-source cryptocurrency with its own network and native coin, DEGO. The active codebase is <a href="https://github.com/derogold/derogold-core">derogold/derogold-core</a>.</p>
+        <h3 class="subtitle" style="margin-top:1.5rem">Core downloads</h3>
+        <p>Latest published release checked on <time datetime="2026-11-08">8 November 2026</time>: <strong>v1.0.1.0</strong>, released <time datetime="2026-03-07">7 March 2026</time>.</p>
+        <p><a href="https://github.com/derogold/derogold-core/releases/latest">Get the latest release and available downloads</a> · <a href="https://github.com/derogold/derogold-core#build-instructions">Build from source</a> · <a href="https://github.com/derogold/derogold-core/issues">Report an issue</a></p>
+        <h3 class="subtitle" style="margin-top:1.5rem">Running a node</h3>
+        <p>The current repository documents pruned-node operation and checkpoint-based fast sync. Development documentation can describe features newer than the published release: check your build and its instructions before changing a node. Fast sync is not intended for mining nodes.</p>
+        <p><a href="https://github.com/derogold/derogold-core#pruned-node-mode">Pruned-node documentation</a> · <a href="https://github.com/derogold/derogold-core#fast-sync---sync-from-height">Fast-sync documentation</a></p>
+      </div></div>
     </section>
     <section class="section">
       <div class="columns">
@@ -109,7 +123,7 @@
                 <div class="has-text-centered"> <i class="has-text-black fas fa-chart-line fa-3x"></i>
                 </div>
                 <br>
-                <p class="has-text-centered subtitle">30M transactions since network launch</p>
+                <p class="has-text-centered subtitle">Open-source core software</p>
               </article>
             </div>
           </div></div>
@@ -133,15 +147,15 @@
               </div>
             </div>
             <div class="timeline-item">
-              <div class="timeline-marker is-image is-32x32"> <img src="https://bulma.io/images/placeholders/32x32.png">
+              <div class="timeline-marker is-image is-32x32"> <span aria-hidden="true">•</span>
               </div>
               <div class="timeline-content">
-                
+
                 <p class="heading">2019: January - March</p><p>Our first few months we were on the block difficulty target of 10 seconds and the emission speed factor 23. This was fun, as our blockchain was spitting out blocks on average every 10 seconds (quite often ever 5-6 seconds) and throwing about 12M DEGO blockreward at our early miners.</p>
               </div>
             </div>
             <div class="timeline-item">
-              <div class="timeline-marker is-image is-32x32"> <img src="https://bulma.io/images/placeholders/32x32.png">
+              <div class="timeline-marker is-image is-32x32"> <span aria-hidden="true">•</span>
               </div>
               <div class="timeline-content">
                 <p class="heading">2019: April - December</p>
@@ -149,7 +163,7 @@
               </div>
             </div>
             <div class="timeline-item">
-              <div class="timeline-marker is-image is-32x32"> <img src="https://bulma.io/images/placeholders/32x32.png">
+              <div class="timeline-marker is-image is-32x32"> <span aria-hidden="true">•</span>
               </div>
               <div class="timeline-content">
                 <p class="heading">2020: January - December</p>
@@ -157,18 +171,18 @@
               </div>
             </div>
           <div class="timeline-item">
-              <div class="timeline-marker is-image is-32x32"> <img src="https://bulma.io/images/placeholders/32x32.png">
+              <div class="timeline-marker is-image is-32x32"> <span aria-hidden="true">•</span>
               </div>
               <div class="timeline-content">
-                <p class="heading">2021: January - present</p>
-                <p>We released v0.6.0 of our core suite software. Exciting times, we fork to the Cryptonight-UPX algo! We do so because of our commitment to sustainability, efficiency and ability to mine DeroGold on small portable and mobile devices (including those that are built on the ARM platform). We will fork the the new algo at height 2,420,000. Additionally, we implemented number of storage-saving features (no-bin files) allowing our users who run nodes to save as much as 150GB of storage space. We plan for mobile wallets, API optimizations, partial codebase rewrites, so that our users and/or third-party ISVs can build their solutions on top of our core suite.</p>
+                <p class="heading">2021: CryptoNight-UPX upgrade</p>
+                <p>The v0.6.0 core release introduced the move to CryptoNight-UPX at block 2,420,000, with an emphasis on mining on smaller devices, including ARM hardware. Storage-saving changes also reduced the data needed by node operators. This is project history; use the current release links above for software downloads.</p>
               </div>
             </div><div class="timeline-item">
-              <div class="timeline-marker is-image is-32x32"> <img src="https://bulma.io/images/placeholders/32x32.png">
+              <div class="timeline-marker is-image is-32x32"> <span aria-hidden="true">•</span>
               </div>
               <div class="timeline-content">
-                <p class="heading">2021: ... and beyond. The non-technical view</p>
-                <p>What is DeroGold? We run this project together as a bunch of good friends. Our common interest is the nature, the environment and how can we help to preserve it for our future generations. We are aiming this project to help solving problems such as circular economy in recycling, re-use of waste materials. Our long-term goal is to create a prototype of a habitable floating island. Then we will aim to document, publish and support individuals and communities to take this further and enable them to build their islands on open seas. We believe the long-term future for all of us is here on planet Earth. Two thirds of our planet is covered by Oceans. How about colonizing our Oceans before we take go on extraterrestrial journey and colonize planets in our solar system and beyond?</p>
+                <p class="heading">Our original environmental ambitions</p>
+                <p>These are the project’s long-term ambitions, not a list of delivered products. What is DeroGold? We run this project together as a bunch of good friends. Our common interest is the nature, the environment and how can we help to preserve it for our future generations. We are aiming this project to help solving problems such as circular economy in recycling, re-use of waste materials. Our long-term goal is to create a prototype of a habitable floating island. Then we will aim to document, publish and support individuals and communities to take this further and enable them to build their islands on open seas. We believe the long-term future for all of us is here on planet Earth. Two thirds of our planet is covered by Oceans. How about colonizing our Oceans before we take go on extraterrestrial journey and colonize planets in our solar system and beyond?</p>
               </div>
             </div></div>
         </div>
@@ -182,10 +196,10 @@
           <div class="title has-text-white">We would like you to help us on our journey and contribute to the project! </div>
           <br>
           <div class="subtitle"> <span> <i class="has-text-white fab fa-discord"></i>
-            </span> <a href="https://discordapp.com/invite/j2aSNFn">Discord</a>
+            </span> <a href="https://discord.gg/j2aSNFn">Discord</a>
           </div>
           <div class="subtitle"> <span class="icon"> <i class="has-text-white fab fa-github"></i>
-            </span> <a href="https://github.com/derogold/derogold">Github</a> </div>
+            </span> <a href="https://github.com/derogold/derogold-core">GitHub</a> </div>
 			<div class="subtitle"> <span class="icon"> <i class="has-text-white fab fa-twitter"></i>
             </span> <a href="https://www.twitter.com/DeroGold">Twitter</a> </div>
 			<div class="subtitle"> <span class="icon"> <i class="has-text-white fab fa-reddit"></i>
@@ -199,15 +213,16 @@
 			<div class="subtitle"> <span class="icon"> <img src="/assets/bttalklogo.png">
             </span> <a href="https://bitcointalk.org/index.php?topic=5088519.0">BitcoinTalk</a> </div>
 			<div class="subtitle"> <span class="icon"> <img src="/assets/logowhite.png">
-            </span> <a href="https://github.com/derogold/whitepaper/raw/master/DeroGold%20Whitepaper.pdf">Whitepaper</a> </div>
+            </span> <a href="https://github.com/derogold/whitepaper/raw/master/DeroGold%20Whitepaper.pdf">Original whitepaper (historical)</a> </div>
 			<div class="subtitle"> <span class="icon"> <img src="/assets/email.png">
-            </span> <img src="https://www.derogold.com/email.png" alt="Email"> </div>		
+            </span> <img src="email.png" alt="Email"> </div>
 			<div class="subtitle"> <span class="icon"> <img src="/assets/team.png">
-			</span> <a href="https://derogold.com/meetus.html">Meet Us</a> </div>
+			</span> <a href="meetus.html">Meet the original team</a> </div>
         </div>
         <div class="column"></div>
       </div>
     </section>
-  
 
+
+<script src="js/main.js" defer></script>
 </body></html>
